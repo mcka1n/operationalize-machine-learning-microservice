@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:5000 -it --rm --name ops-machine-learning-running-app ops-machine-learning-app
+docker run -p 80:5000 -it --rm --name ops-machine-learning-running-app ops-machine-learning-app
