@@ -14,6 +14,12 @@ You are given a pre-trained, `sklearn` model that has been trained to predict ho
 ## Setup the Environment
 
 * Create a virtualenv and activate it
+
+```
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
+```
+
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
