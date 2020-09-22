@@ -24,5 +24,4 @@ EXPOSE 5000
 
 ## Step 5:
 # Run app.py at container launch
-#CMD ["flask", "run", "--host=0.0.0.0"]
-CMD flask run --host=0.0.0.0
+CMD ["flask", "run", "--host=0.0.0.0"]
