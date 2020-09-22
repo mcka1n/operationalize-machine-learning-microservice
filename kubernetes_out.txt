@@ -1,0 +1,10 @@
+Error from server (AlreadyExists): pods "ops-machine-learning-app-k8" already exists
+NAME                          READY   STATUS    RESTARTS   AGE
+ops-machine-learning-app-k8   1/1     Running   0          108s
+Forwarding from 127.0.0.1:8000 -> 5000
+Forwarding from [::1]:8000 -> 5000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000

@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-PORT=80
+# About the ports:
+#   If docker is running locally, I'm using port 80
+#   For Kubernetes I'm using port 8000
+PORT=8000
 echo "Port: $PORT"
 
 # POST method predict
