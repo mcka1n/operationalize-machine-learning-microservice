@@ -1,4 +1,3 @@
-# TODO
 [![mcka1n](https://circleci.com/gh/mcka1n/operationalize-machine-learning-microservice.svg?style=svg)](https://circleci.com/gh/mcka1n/operationalize-machine-learning-microservice)
 
 
@@ -23,6 +22,21 @@ source ~/.devops/bin/activate
 
 * Run `make install` to install the necessary dependencies
 
+## The files in this repository
+
+* app.py
+  * This is the core of the project, it consists in a microservice written in Flask (Python) that uses a pre-trained machine learning model to predict housing prices in Boston, there are only two endpoints available on this API.
+* requirements.txt
+  * This is where we list all the dependencies to run the project
+* Makefile
+  * This includes instructions on the setup, tests and linting of the project
+* Dockerfile
+  * Here we have all the instructions to containerize the Flask service
+* Bash scripts. As a good practice, we are including all the required steps to execute as bash scripts
+  * `run_docker.sh` (builds the image, and run the container)
+  * `run_kubernetes.sh` (runs a docker image with kubernetes, lists the kubernetes pod(s), and forwards the container port to a host)
+  * `upload_docker.sh` (uploads the previously build image to DockerHub)
+
 ### Running `app.py`
 
 1. Standalone:  `python app.py`
@@ -33,7 +47,7 @@ source ~/.devops/bin/activate
 
 Once you have the service up and running, you can run the bash script `./make_prediction.sh` and it will make a `POST` request to the `/predict` endpoint with a proper payload.
 
-The result should be a value (float) with a 200 OK HTTP Status
+The response should be a value (float) with a `200 OK` HTTP Status
 
 ### Uploading the docker image to DockerHub
 
