@@ -29,9 +29,18 @@ source ~/.devops/bin/activate
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps
+#### Testing the microservice
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+Once you have the service up and running, you can run the bash script `./make_prediction.sh` and it will make a `POST` request to the `/predict` endpoint with a proper payload.
+
+The result should be a value (float) with a 200 OK HTTP Status
+
+### Uploading the docker image to DockerHub
+
+If you haven't login yet, it will ask you so do: `docker login` and use your credentials from [DockerHub](https://hub.docker.com/)
+
+Once you do that, you will be able to upload the image by running the script:
+
+```
+./upload_docker.sh
+```
