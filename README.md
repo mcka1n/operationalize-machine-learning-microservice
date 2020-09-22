@@ -1,5 +1,6 @@
 # TODO
-<include a CircleCI status badge, here>
+[![mcka1n](https://circleci.com/gh/mcka1n/operationalize-machine-learning-microservice.svg?style=svg)](https://circleci.com/gh/mcka1n/operationalize-machine-learning-microservice)
+
 
 ## Project Overview
 
